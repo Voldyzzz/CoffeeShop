@@ -26,6 +26,18 @@ button {
   transition: color 0.3s ease;
 }
 
+.btn-primary {
+  font: 700 18px "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c99e71;
+  padding: 20px 36px;
+}
+
+.btn-primary:hover {
+  background-color: #b67e42;
+}
+
 .container {
   max-width: 1340px;
   margin: 0 auto;
@@ -51,7 +63,8 @@ body {
 
 .header__wrapper,
 .header__wrapper__nav-main,
-.header__wrapper__nav-main__list {
+.header__wrapper__nav-main__list,
+.header__wrapper__action {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,8 +74,101 @@ body {
   flex-grow: 1;
 }
 
+.header__wrapper__nav-main__list {
+  gap: 48px;
+  font: 400 18px "Inter", Arial, Helvetica, sans-serif;
+}
+
 .header__wrapper__nav-main__list__item__link {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.header__wrapper__nav-main__list__item__link.active {
+  color: #c99e71;
+  font-weight: 700;
+  cursor: default;
+}
+
+.header__wrapper__nav-main__list__item__link:hover {
+  color: #c99e71;
+}
+
+.header__wrapper__nav-main__logo {
+  width: 72px;
+  height: 60px;
+}
+
+.header__wrapper__action {
+  gap: 50px;
+  margin-left: 48px;
+}
+
+.header__wrapper__action__search path,
+.header__wrapper__action__cart path {
+  transition: stroke 0.3s ease;
+}
+
+.header__wrapper__action__search:hover path,
+.header__wrapper__action__cart:hover path {
+  stroke: #c99e71;
+}
+
+/* Hero */
+.hero {
+  background: url(../images/hero.png) 50% 0% / cover no-repeat;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 148px 0 158px;
+}
+
+.hero__inner__banner-info {
+  max-width: 530px;
+}
+
+.hero__inner__banner-info__title {
+  font: 72px/94px "Righteous", cursive;
+}
+
+.hero__inner__banner-info__text {
+  font-size: 20px;
+  line-height: 36px;
+  opacity: 0.8;
+  text-transform: capitalize;
+  margin: 32px 0 64px;
+}
+
+.hero__inner__banner-info__btn {
+  padding: 24px 40px;
+}
+
+.hero__inner__video-btn {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  height: 110px;
+  font: 400 16px "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.hero__inner__video-btn:hover {
+  color: #c99e71;
+}
+
+.hero__inner__video-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 66px;
+  height: 66px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: url(../images/play-video.svg) 50%/14px 18px no-repeat;
+  transform: translateX(-50%);
 }
