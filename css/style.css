@@ -262,3 +262,128 @@ body {
   opacity: 0.8;
   text-transform: capitalize;
 }
+
+/* Popular */
+
+.popular__inner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  margin-bottom: 56px;
+}
+
+.popular__inner__wrapper__card {
+  padding: 48px 48px 40px 48px;
+  background-color: #121315;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popular__inner__wrapper__card:hover .popular__inner__wrapper__card__btn {
+  display: flex;
+}
+
+.popular__inner__wrapper__card:hover .popular__inner__wrapper__card__rating,
+.popular__inner__wrapper__card:hover .popular__inner__wrapper__card__price {
+  display: none;
+}
+
+.popular__inner__wrapper__card__img {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.popular__inner__wrapper__card__rating {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  height: 20px;
+}
+
+.popular__inner__wrapper__card__rating__title {
+  color: #c99e71;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.popular__inner__wrapper__card__rating__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.popular__inner__wrapper__card__title {
+  font: 400 24px/30px "Righteous", cursive;
+  margin: 20px 0;
+}
+
+.popular__inner__wrapper__card__price {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popular__inner__wrapper__card__price__dark {
+  color: #c99e71;
+  font: 400 18px "Inter", Arial, Helvetica, sans-serif;
+}
+
+.popular__inner__wrapper__card__btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 170px;
+  font: 600 18px/22px "Urbanist", Arial, Helvetica, sans-serif;
+  text-transform: none;
+  margin: 38px auto 0;
+  padding: 12px 0;
+}
+
+.popular__inner__link {
+  display: block;
+  width: 252px;
+  margin: 0 auto;
+  font: 700 18px "Inter", Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Discover */
+
+.discover__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 85px 80px;
+  background-color: #1c1814;
+}
+
+.discover__inner__img {
+  display: block;
+  margin: 0 auto;
+  max-height: 360px;
+}
+
+.discover__inner__wrapper {
+  max-width: 535px;
+  width: 100%;
+}
+
+.discover__inner__wrapper__title {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.discover__inner__wrapper__text {
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.discover__inner__wrapper__link {
+  display: block;
+  width: 215px;
+  margin-top: 36px;
+  color: #fff;
+  text-decoration: none;
+}
